@@ -1,0 +1,21 @@
+Determine se as expressões a seguir, representam expressões aritméticas legais ou ilegais: 
+
+long *p1, *p2;
+int j;
+chat *p3;
+
+p2 = p1 + 4;
+j= p2 - p1; 
+j= p1 - p2;
+p1 = p2 - 2;
+p3 = p1 - 1;
+j= p1 - p3;
+
+R: 
+
+p2 = p1 + 4; (Legal) 
+j= p2 - p1; (Legal) - J <- 4
+j= p1 - p2; (Legal) - J <- -4 
+p1 = p2 - 2;  (Legal) - Compatíveis 
+p3 = p1 - 1; (Legal) - Não compatíveis  
+j= p1 - p3; (Ilegal) - Não compatíveis
