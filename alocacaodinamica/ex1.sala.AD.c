@@ -8,7 +8,7 @@ int novo_tamanho;
 int tamanho; 
 
 printf("Digite o tamanho do vetor: ");
-scanf("%i". &tamanho);
+scanf("%i", &tamanho);
 int * vetor = (int*) calloc(tamanho, sizeof(int)); 
 
 printf("\nDigite um novo tamanho: ");
