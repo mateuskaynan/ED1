@@ -1,8 +1,7 @@
 // EXERCICIO ALUNO MODIFICADO
-
 #include <stdio.h>
 #include <stdlib.h>
-#define QUANTIDADE_ALUNOS 1 //Constante 
+#define QUANTIDADE_ALUNOS 2 //CONSTANTE
 
 //ESTRUTURA 
 typedef struct aluno {
@@ -13,7 +12,6 @@ typedef struct aluno {
 
 //CRIAÇÃO DA FUNÇÃO 
 void preenche(Aluno * aluno, int tamanho){
-    
     int count; 
     for(count=0; count < tamanho; count++){
     printf("------- CADASTRO -------\n");
@@ -27,20 +25,21 @@ void preenche(Aluno * aluno, int tamanho){
     }
 }
 
+void imprime(Aluno * aluno){
+    printf("NOME %s IDADE: %d MATRICULA: %d", aluno->nome, aluno->idade, aluno->matricula);
+}
+
 //FUNÇÃO PRINCIPAL
 int main(void){
     
     Aluno * aluno = (Aluno*) malloc(QUANTIDADE_ALUNOS*sizeof(Aluno));
     if(aluno==NULL){
         printf("NO memory RAM.");
-        exit(1);
-    } 
-    else {
-    }
+        exit(1); } 
     
     //CHAMADA DA FUNÇÃO
     preenche(aluno, QUANTIDADE_ALUNOS);
-    
+    imprime(aluno); 
     //SOLICITAÇÃO DE NOVO TAMANHO 
     int novo_tamanho;
     printf("\n");

@@ -17,7 +17,7 @@ typedef struct aluno {
 } Aluno;   
 
 //FUNÇÃO CORRESPONDENTE AO PREENCHIMENTO DOS DADOS DO ALUNO 
-void preenche_aluno(Aluno *aluno){
+void preenche_aluno(Aluno * aluno){
     printf("\nDIGITE SEU NOME: ");
     scanf(" %[^\n]", aluno->nome);
     printf("DIGITE A SUA MATRICULA: ");
