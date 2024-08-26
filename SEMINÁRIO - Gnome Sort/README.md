@@ -2,8 +2,6 @@
 
 O Gnome Sort é um algoritmo de ordenação utilizado para organizar elementos de um conjunto de dados, sejam eles strings ou números, em uma ordem específica, de forma crescente ou decrescente. Sua principal função é reorganizar os itens de acordo com uma ordem estabelecida.    
 
-##
-
 # Execução
 
 Os códigos elaborados já passam para o vetor, os números pré estabelecidos, então a execução pode ser feita apenas a partir do compilador.    
